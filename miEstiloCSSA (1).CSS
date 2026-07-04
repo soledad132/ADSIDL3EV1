@@ -1,0 +1,85 @@
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background:linear-gradient(120deg, rgb(253, 192, 248),white);
+}
+body{
+    max-width:1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px black;
+    animation: aparecer 1s ease-in-out;
+}
+h1{
+    font-size: 41px;
+    text-align: center;
+    color:rgb(180, 151, 207);
+    text-shadow:3px 3px 10px pink;
+    transition: 0.3 ease;
+}
+h2{
+    font-size: 30px;
+    color:brown;
+    border-left: 6px solid burlywood;
+    padding-left: 10px;
+}
+p,li{
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: justify;
+    color:black;
+}
+img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 14px;
+    box-shadow:0 10px 25px black;
+    transition: 0.4s ease;
+    animation: HOLA 1s ease-in-out;
+}
+iframe{
+    display: block;
+    margin: 20px auto;
+    border-radius: 14px;
+    box-shadow:0 10px 30px black;
+}
+a{
+    color:darkgreen;
+    text-decoration: none;
+    font-weight: bold ;
+    transition: 0.3s;
+}
+h1:hover{
+    transform: scale(1.2);
+}
+img:hover{
+    transform: scale(1.2) rotate(3deg);
+}
+a:hover{
+    color:rgb(149, 197, 149);
+    text-decoration: underline;
+}
+h2:hover{
+    border-left: rgb(199, 134, 91) ;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+    opacity: 1;
+    transition:translateY(0) ;;
+    }
+}
+@keyframes HOLA{
+    from{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to{
+        opacity: 1;
+        transition: translateX(0);
+    }
+}
